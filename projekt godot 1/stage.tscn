@@ -36,8 +36,6 @@ __meta__ = {
 
 [node name="coins" type="Node" parent="." index="1"]
 
-editor/display_folded = true
-
 [node name="coin" parent="coins" index="0" instance=ExtResource( 2 )]
 
 position = Vector2( 672, 1179 )
@@ -176,7 +174,7 @@ position = Vector2( 2287.07, 1292.49 )
 
 [node name="coin 31 5" parent="coins" index="34" instance=ExtResource( 2 )]
 
-position = Vector2( 2223.07, 1292.49 )
+position = Vector2( 2223.73, 1292.49 )
 
 [node name="coin 31 6" parent="coins" index="35" instance=ExtResource( 2 )]
 
@@ -208,8 +206,6 @@ position = Vector2( 4172.75, 541.058 )
 
 [node name="props" type="Node" parent="." index="2"]
 
-editor/display_folded = true
-
 [node name="moving_platform" parent="props" index="0" instance=ExtResource( 3 )]
 
 position = Vector2( 1451.86, 742.969 )
@@ -237,7 +233,7 @@ rotation = -0.0826906
 
 [node name="still3" parent="props" index="5" instance=ExtResource( 3 )]
 
-position = Vector2( 1700.06, 1066.92 )
+position = Vector2( 1700.43, 1068.08 )
 rotation = 0.547997
 
 [node name="one_way_platform" parent="props" index="6" instance=ExtResource( 4 )]
@@ -316,7 +312,7 @@ position = Vector2( 1292.11, 1059.24 )
 
 [node name="enemy 9" parent="enemies" index="4" instance=ExtResource( 6 )]
 
-position = Vector2( 968.927, 766.466 )
+position = Vector2( 968.927, 765.819 )
 
 [node name="enemy 10" parent="enemies" index="5" instance=ExtResource( 6 )]
 
