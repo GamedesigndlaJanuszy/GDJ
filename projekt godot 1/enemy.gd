@@ -11,6 +11,7 @@ const STATE_KILLED = 1
 var linear_velocity = Vector2()
 var direction = -1
 var anim=""
+var blabla="xD"
 
 var state = STATE_WALKING
 
