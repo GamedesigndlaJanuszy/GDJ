@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=2]
@@ -8,8 +8,9 @@
 [ext_resource path="res://enemy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://parallax_bg.tscn" type="PackedScene" id=7]
 [ext_resource path="res://music.ogg" type="AudioStream" id=8]
+[ext_resource path="res://bullet.png" type="Texture" id=9]
 
-[node name="stage" type="Node"]
+[node name="stage" type="Node" index="0"]
 
 [node name="tile_map" type="TileMap" parent="." index="0"]
 
@@ -375,5 +376,15 @@ volume_db = 0.0
 autoplay = true
 mix_target = 0
 bus = "Master"
+
+[node name="bullet" type="Sprite" parent="." index="8"]
+
+position = Vector2( 351, 239 )
+texture = ExtResource( 9 )
+
+[node name="bullet2" type="Sprite" parent="." index="9"]
+
+position = Vector2( 397, 199 )
+texture = ExtResource( 9 )
 
 
