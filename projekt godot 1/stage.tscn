@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://parallax_bg.tscn" type="PackedScene" id=7]
 [ext_resource path="res://music.ogg" type="AudioStream" id=8]
 [ext_resource path="res://bullet.png" type="Texture" id=9]
+[ext_resource path="res://prophetsprite.png" type="Texture" id=10]
 
 [node name="stage" type="Node" index="0"]
 
@@ -296,6 +297,7 @@ position = Vector2( 1039.29, 409.746 )
 [node name="player" parent="." index="3" instance=ExtResource( 5 )]
 
 position = Vector2( 251.684, 1045.6 )
+_sections_unfolded = [ "collision" ]
 
 [node name="enemies" type="Node" parent="." index="4"]
 
@@ -386,5 +388,12 @@ texture = ExtResource( 9 )
 
 position = Vector2( 397, 199 )
 texture = ExtResource( 9 )
+
+[node name="prophetsprite" type="Sprite" parent="." index="10"]
+
+position = Vector2( 153.97, 950.161 )
+scale = Vector2( 0.281846, 0.281846 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Pause" ]
 
 
