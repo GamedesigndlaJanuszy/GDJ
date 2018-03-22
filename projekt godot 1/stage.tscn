@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=2]
@@ -9,6 +9,658 @@
 [ext_resource path="res://parallax_bg.tscn" type="PackedScene" id=7]
 [ext_resource path="res://music.ogg" type="AudioStream" id=8]
 [ext_resource path="res://bullet.png" type="Texture" id=9]
+[ext_resource path="res://textures/goblinka/goblinka_upper_body.png" type="Texture" id=10]
+[ext_resource path="res://textures/goblinka/goblinka_arm_f_1.png" type="Texture" id=11]
+[ext_resource path="res://textures/goblinka/goblinka_arm_f_2.png" type="Texture" id=12]
+[ext_resource path="res://textures/goblinka/goblinka_arm_b_1.png" type="Texture" id=13]
+[ext_resource path="res://textures/goblinka/goblinka_arm_b_2.png" type="Texture" id=14]
+[ext_resource path="res://textures/goblinka/goblinka_head.png" type="Texture" id=15]
+[ext_resource path="res://textures/goblinka/goblinka_lower_body.png" type="Texture" id=16]
+[ext_resource path="res://textures/goblinka/goblinka_leg_b_1.png" type="Texture" id=17]
+[ext_resource path="res://textures/goblinka/goblinka_leg_b_2.png" type="Texture" id=18]
+[ext_resource path="res://textures/goblinka/goblinka_foot_b_1.png" type="Texture" id=19]
+[ext_resource path="res://textures/goblinka/goblinka_leg_f_1.png" type="Texture" id=20]
+[ext_resource path="res://textures/goblinka/goblinka_leg_f_2.png" type="Texture" id=21]
+[ext_resource path="res://textures/goblinka/goblinka_foot_f_1.png" type="Texture" id=22]
+[ext_resource path="res://textures/goblinka/goblinka.png" type="Texture" id=23]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "goblinka_base"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("goblinka_base/goblinka__upper_body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -20.0691, -2.37205 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("goblinka_base/goblinka__upper_body:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_f_1/goblinka_arm_f_2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -18.9197, 25.4846 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_f_1/goblinka_arm_f_2:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_f_1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -16.9457, -29.567 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_f_1:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.283392 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2/goblinka_foot_b:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -5.07112, 42.57 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2/goblinka_foot_b:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 13.4855, 39.4962 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 4.42192, 13.1002 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_head:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 4.76325, -36.4186 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_head:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2/goblinka_foot_f:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -17.1626, 41.9862 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2/goblinka_foot_f:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -9.34601, 41.7721 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -11.2287, 12.0544 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.192031 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_b_1/goblinka_arm_b_2:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 9.25201, 26.3414 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_b_1/goblinka_arm_b_2:rotation_degrees")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_b_1:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 9.20136, -24.7665 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_b_1:rotation_degrees")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("goblinka_base/goblinka_lower_body:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -20.1126, -2.74818 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("goblinka_base/goblinka_lower_body:rotation_degrees")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "goblinka_run"
+length = 1.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("goblinka_base/goblinka__upper_body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -20.0691, -2.37205 ), Vector2( -20.0691, -2.37205 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("goblinka_base/goblinka__upper_body:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_f_1/goblinka_arm_f_2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18.9197, 25.4846 ), Vector2( -18.9197, 25.4847 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_f_1/goblinka_arm_f_2:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -24.2879, -87.2821 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_f_1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -16.9457, -29.567 ), Vector2( -16.9457, -29.567 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_f_1:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 24.5713, 18.1029 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2/goblinka_foot_b:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -5.07118, 42.5702 ), Vector2( -5.07118, 42.5704 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2/goblinka_foot_b:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -14.5266, 25.949 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 13.4855, 39.4962 ), Vector2( 13.4855, 39.4962 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 23.8206, 56.5693 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4.42192, 13.1002 ), Vector2( 4.42192, 13.1002 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_b_1:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -30.2719, 44.0292 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_head:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 4.76325, -36.4186 ), Vector2( 4.76325, -36.4186 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_head:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2/goblinka_foot_f:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -17.1626, 41.9862 ), Vector2( -17.1626, 41.9863 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2/goblinka_foot_f:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 10.1844, -4.87663 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -9.34601, 41.7721 ), Vector2( -9.34601, 41.7721 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 63.9128, 74.6528 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -11.2287, 12.0544 ), Vector2( -11.2287, 12.0544 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("goblinka_base/goblinka_lower_body/goblinka_leg_f_1:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -5.93115, -94.8216 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_b_1/goblinka_arm_b_2:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 9.252, 26.3414 ), Vector2( 9.25195, 26.3414 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_b_1/goblinka_arm_b_2:rotation_degrees")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 6.88571, -47.7189 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_b_1:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 9.20136, -24.7665 ), Vector2( 9.20136, -24.7665 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("goblinka_base/goblinka__upper_body/goblinka_arm_b_1:rotation_degrees")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -6.88571, 47.7189 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("goblinka_base/goblinka_lower_body:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -20.1126, -2.74818 ), Vector2( -20.1126, -2.74818 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("goblinka_base/goblinka_lower_body:rotation_degrees")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
 
 [node name="stage" type="Node" index="0"]
 
@@ -293,11 +945,20 @@ position = Vector2( 3200.29, 1237.8 )
 
 position = Vector2( 1039.29, 409.746 )
 
+[node name="KinematicBody2D" type="KinematicBody2D" parent="props" index="19"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
 [node name="player" parent="." index="3" instance=ExtResource( 5 )]
 
-position = Vector2( 251.684, 1045.6 )
+position = Vector2( 217.794, 1045.6 )
 
 [node name="enemies" type="Node" parent="." index="4"]
+
+editor/display_folded = true
 
 [node name="enemy 5" parent="enemies" index="0" instance=ExtResource( 6 )]
 
@@ -386,5 +1047,216 @@ texture = ExtResource( 9 )
 
 position = Vector2( 397, 199 )
 texture = ExtResource( 9 )
+
+[node name="goblinka_sprite" type="Node2D" parent="." index="10"]
+
+position = Vector2( -68.0444, -125.07 )
+
+[node name="goblinka_base" type="Node2D" parent="goblinka_sprite" index="0"]
+
+position = Vector2( 16.2683, 0.631157 )
+
+[node name="goblinka__upper_body" type="Sprite" parent="goblinka_sprite/goblinka_base" index="0"]
+
+position = Vector2( -20.0691, -2.37205 )
+texture = ExtResource( 10 )
+offset = Vector2( -0.497952, -16.7684 )
+
+[node name="goblinka_arm_f_1" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka__upper_body" index="0"]
+
+position = Vector2( -16.9457, -29.567 )
+rotation = 0.33174
+z_index = 1
+texture = ExtResource( 11 )
+offset = Vector2( -2.79192, 5.32474 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="goblinka_arm_f_2" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka__upper_body/goblinka_arm_f_1" index="0"]
+
+position = Vector2( -18.9197, 25.4847 )
+rotation = -1.36963
+texture = ExtResource( 12 )
+offset = Vector2( -0.492661, 19.8673 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_bone_display" type="Node2D" parent="goblinka_sprite/goblinka_base/goblinka__upper_body/goblinka_arm_f_1/goblinka_arm_f_2" index="0"]
+
+position = Vector2( -2.42604, 27.574 )
+scale = Vector2( 0.344613, 0.344613 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_arm_b_1" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka__upper_body" index="1"]
+
+show_behind_parent = true
+position = Vector2( 9.20136, -24.7665 )
+rotation = 0.699601
+z_index = -2
+texture = ExtResource( 13 )
+offset = Vector2( 3.06383, 12.231 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="goblinka_arm_b_2" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka__upper_body/goblinka_arm_b_1" index="0"]
+
+position = Vector2( 9.25196, 26.3414 )
+rotation = -0.699601
+scale = Vector2( 1, 1 )
+texture = ExtResource( 14 )
+offset = Vector2( 13.929, -2.08723 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_bone_display" type="Node2D" parent="goblinka_sprite/goblinka_base/goblinka__upper_body/goblinka_arm_b_1/goblinka_arm_b_2" index="0"]
+
+position = Vector2( 20.5016, -2.68663 )
+scale = Vector2( 0.252232, 0.252232 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_head" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka__upper_body" index="2"]
+
+position = Vector2( 4.76325, -36.4186 )
+texture = ExtResource( 15 )
+offset = Vector2( -3.09846, -29.2217 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_bone_display" type="Node2D" parent="goblinka_sprite/goblinka_base/goblinka__upper_body/goblinka_head" index="0"]
+
+position = Vector2( 3.44407, -27.269 )
+scale = Vector2( 0.322855, 0.322855 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_lower_body" type="Sprite" parent="goblinka_sprite/goblinka_base" index="1"]
+
+position = Vector2( -20.1126, -2.74818 )
+texture = ExtResource( 16 )
+offset = Vector2( -4.21647, 8.42287 )
+
+[node name="goblinka_bone_display" type="Node2D" parent="goblinka_sprite/goblinka_base/goblinka_lower_body" index="0"]
+
+position = Vector2( -2.30848, 16.8242 )
+scale = Vector2( 0.193201, 0.193201 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_leg_b_1" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body" index="1"]
+
+show_behind_parent = true
+position = Vector2( 4.42192, 13.1002 )
+rotation = 0.587137
+z_index = -1
+texture = ExtResource( 17 )
+offset = Vector2( 2.59378, 14.2407 )
+_sections_unfolded = [ "Visibility", "Z Index" ]
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="goblinka_leg_b_2" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_b_1" index="0"]
+
+position = Vector2( 13.4855, 39.4962 )
+rotation = 0.907404
+texture = ExtResource( 18 )
+offset = Vector2( -1.82907, 17.9135 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_foot_b" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2" index="0"]
+
+position = Vector2( -5.07118, 42.5704 )
+rotation = 0.354123
+scale = Vector2( 1, 1 )
+texture = ExtResource( 19 )
+offset = Vector2( 8.01872, 3.01907 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_bone_display" type="Node2D" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2/goblinka_foot_b" index="0"]
+
+position = Vector2( 15.6039, 8.221 )
+scale = Vector2( 0.152837, 0.152837 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_leg_f_1" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body" index="2"]
+
+position = Vector2( -11.2287, 12.0544 )
+rotation = -1.43803
+texture = ExtResource( 20 )
+offset = Vector2( -4.29803, 21.1869 )
+__meta__ = {
+"_edit_ik_": true
+}
+
+[node name="goblinka_leg_f_2" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_f_1" index="0"]
+
+position = Vector2( -9.34601, 41.7721 )
+rotation = 1.27673
+scale = Vector2( 1, 1 )
+texture = ExtResource( 21 )
+offset = Vector2( -5.54544, 17.2098 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_foot_f" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2" index="0"]
+
+position = Vector2( -17.1626, 41.9863 )
+rotation = -0.04836
+scale = Vector2( 1, 1 )
+texture = ExtResource( 22 )
+offset = Vector2( 7.64955, 3.20095 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_bone_display" type="Node2D" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2/goblinka_foot_f" index="0"]
+
+position = Vector2( 14.9875, 8.57131 )
+scale = Vector2( 0.13968, 0.13968 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="goblinka_complete" type="Sprite" parent="goblinka_sprite" index="1"]
+
+visible = false
+modulate = Color( 1, 1, 1, 0.176784 )
+texture = ExtResource( 23 )
+_sections_unfolded = [ "Material", "Visibility" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="goblinka_sprite" index="2"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/goblinka_base = SubResource( 1 )
+anims/goblinka_run = SubResource( 2 )
+blend_times = [  ]
 
 
