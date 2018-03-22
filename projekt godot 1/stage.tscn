@@ -356,7 +356,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
+"times": PoolRealArray( 0.5, 0.7 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( -20.0691, -2.37205 ), Vector2( -20.0691, -2.37205 ) ]
@@ -1065,7 +1065,7 @@ offset = Vector2( -0.497952, -16.7684 )
 [node name="goblinka_arm_f_1" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka__upper_body" index="0"]
 
 position = Vector2( -16.9457, -29.567 )
-rotation = 0.33174
+rotation = 0.407266
 z_index = 1
 texture = ExtResource( 11 )
 offset = Vector2( -2.79192, 5.32474 )
@@ -1076,8 +1076,8 @@ __meta__ = {
 
 [node name="goblinka_arm_f_2" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka__upper_body/goblinka_arm_f_1" index="0"]
 
-position = Vector2( -18.9197, 25.4847 )
-rotation = -1.36963
+position = Vector2( -18.9197, 25.4846 )
+rotation = -0.634105
 texture = ExtResource( 12 )
 offset = Vector2( -0.492661, 19.8673 )
 __meta__ = {
@@ -1096,7 +1096,7 @@ __meta__ = {
 
 show_behind_parent = true
 position = Vector2( 9.20136, -24.7665 )
-rotation = 0.699601
+rotation = 0.0620281
 z_index = -2
 texture = ExtResource( 13 )
 offset = Vector2( 3.06383, 12.231 )
@@ -1107,8 +1107,8 @@ __meta__ = {
 
 [node name="goblinka_arm_b_2" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka__upper_body/goblinka_arm_b_1" index="0"]
 
-position = Vector2( 9.25196, 26.3414 )
-rotation = -0.699601
+position = Vector2( 9.25199, 26.3414 )
+rotation = -0.0620281
 scale = Vector2( 1, 1 )
 texture = ExtResource( 14 )
 offset = Vector2( 13.929, -2.08723 )
@@ -1160,7 +1160,7 @@ __meta__ = {
 
 show_behind_parent = true
 position = Vector2( 4.42192, 13.1002 )
-rotation = 0.587137
+rotation = -0.280415
 z_index = -1
 texture = ExtResource( 17 )
 offset = Vector2( 2.59378, 14.2407 )
@@ -1172,7 +1172,7 @@ __meta__ = {
 [node name="goblinka_leg_b_2" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_b_1" index="0"]
 
 position = Vector2( 13.4855, 39.4962 )
-rotation = 0.907404
+rotation = 0.525024
 texture = ExtResource( 18 )
 offset = Vector2( -1.82907, 17.9135 )
 __meta__ = {
@@ -1181,8 +1181,8 @@ __meta__ = {
 
 [node name="goblinka_foot_b" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_b_1/goblinka_leg_b_2" index="0"]
 
-position = Vector2( -5.07118, 42.5704 )
-rotation = 0.354123
+position = Vector2( -5.07118, 42.5702 )
+rotation = -0.118477
 scale = Vector2( 1, 1 )
 texture = ExtResource( 19 )
 offset = Vector2( 8.01872, 3.01907 )
@@ -1201,7 +1201,7 @@ __meta__ = {
 [node name="goblinka_leg_f_1" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body" index="2"]
 
 position = Vector2( -11.2287, 12.0544 )
-rotation = -1.43803
+rotation = -0.400131
 texture = ExtResource( 20 )
 offset = Vector2( -4.29803, 21.1869 )
 __meta__ = {
@@ -1211,7 +1211,7 @@ __meta__ = {
 [node name="goblinka_leg_f_2" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_f_1" index="0"]
 
 position = Vector2( -9.34601, 41.7721 )
-rotation = 1.27673
+rotation = 1.15133
 scale = Vector2( 1, 1 )
 texture = ExtResource( 21 )
 offset = Vector2( -5.54544, 17.2098 )
@@ -1221,8 +1221,8 @@ __meta__ = {
 
 [node name="goblinka_foot_f" type="Sprite" parent="goblinka_sprite/goblinka_base/goblinka_lower_body/goblinka_leg_f_1/goblinka_leg_f_2" index="0"]
 
-position = Vector2( -17.1626, 41.9863 )
-rotation = -0.04836
+position = Vector2( -17.1626, 41.9862 )
+rotation = 0.127495
 scale = Vector2( 1, 1 )
 texture = ExtResource( 22 )
 offset = Vector2( 7.64955, 3.20095 )
