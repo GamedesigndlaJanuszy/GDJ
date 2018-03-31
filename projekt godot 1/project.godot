@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="Nowy projekt gry"
+config/name="Wspólny projekt Gdj"
 run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
 
