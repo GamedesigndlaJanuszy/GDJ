@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/Run7.png-ca6901f3ab8f30777d96e71941388fc3.stex"
 
 [deps]
 
-source_file="res://icon.png"
-source_md5="ae7e641067601e2184afcade49abd283"
+source_file="res://Sprites/Player/Run7.png"
+source_md5="314139f9de2fca03f866d0f3eda45625"
 
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
-dest_md5="84511021bbc8c9d37c7f0f4d181de883"
+dest_files=[ "res://.import/Run7.png-ca6901f3ab8f30777d96e71941388fc3.stex" ]
+dest_md5="9aa06f03d91bfc60cf1c4ab52990e63a"
 
 [params]
 
