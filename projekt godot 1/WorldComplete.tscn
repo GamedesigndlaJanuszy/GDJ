@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://WorldComplete.gd" type="Script" id=1]
+[ext_resource path="res://portal1.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 4.0
+height = 8.0
+
+[node name="WorldComplete" type="Area2D"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+next_world = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+position = Vector2( -0.86577, 2.19652 )
+scale = Vector2( 1.29864, 1.28624 )
+shape = SubResource( 1 )
+
+[node name="portal1" type="Sprite" parent="." index="1"]
+
+position = Vector2( -0.589844, 1.49894 )
+scale = Vector2( 0.280547, 0.292738 )
+texture = ExtResource( 2 )
+
+

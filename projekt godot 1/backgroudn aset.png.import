@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/backgroudn aset.png-c24cc4d31eaf713fb71660da1f1d94d0.stex"
+
+[deps]
+
+source_file="res://backgroudn aset.png"
+source_md5="754c6a4949d2a68f2c7e5024b16904ea"
+
+dest_files=[ "res://.import/backgroudn aset.png-c24cc4d31eaf713fb71660da1f1d94d0.stex" ]
+dest_md5="08ff08adf1d26e829fda4a80a865ad3e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

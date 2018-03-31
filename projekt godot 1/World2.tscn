@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://GroundTileSet.tres" type="TileSet" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://WorldComplete.tscn" type="PackedScene" id=3]
+[ext_resource path="res://game_background_1.png" type="Texture" id=4]
+
+[node name="World2" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 262160, 0, 0, 262161, 2, 0, 327688, 0, 0, 327689, 1, 0, 327690, 1, 0, 327691, 2, 0, 327696, 3, 0, 327697, 4, 0, 393224, 8, 0, 393225, 6, 0, 393226, 6, 0, 393227, 7, 0, 393232, 3, 0, 393233, 4, 0, 458754, 0, 0, 458755, 2, 0, 458768, 3, 0, 458769, 4, 0, 524290, 5, 0, 524291, 7, 0, 524304, 3, 0, 524305, 4, 0, 589825, 0, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589838, 1, 0, 589839, 1, 0, 589840, 1, 0, 589841, 1, 0, 589842, 2, 0, 655361, 5, 0, 655362, 6, 0, 655363, 6, 0, 655364, 6, 0, 655365, 6, 0, 655366, 6, 0, 655367, 6, 0, 655368, 6, 0, 655369, 6, 0, 655370, 6, 0, 655371, 6, 0, 655372, 6, 0, 655373, 6, 0, 655374, 6, 0, 655375, 6, 0, 655376, 6, 0, 655377, 6, 0, 655378, 7, 0 )
+_sections_unfolded = [ "Cell" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 89.3473, 193.902 )
+
+[node name="WorldComplete" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 556.841, 96.5673 )
+next_world = "res://World.tscn"
+
+[node name="game_background_1" type="Sprite" parent="WorldComplete" index="2"]
+
+position = Vector2( -233.013, 87.0191 )
+scale = Vector2( 0.339071, 0.365458 )
+z_index = -2
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Z Index" ]
+
+
