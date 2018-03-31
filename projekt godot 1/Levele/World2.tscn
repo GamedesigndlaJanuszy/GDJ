@@ -3,9 +3,9 @@
 [ext_resource path="res://GroundTileSet.tres" type="TileSet" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://WorldComplete.tscn" type="PackedScene" id=3]
-[ext_resource path="res://game_background_1.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Tła/game_background_1.png" type="Texture" id=4]
 
-[node name="World2" type="Node"]
+[node name="World2" type="Node" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 

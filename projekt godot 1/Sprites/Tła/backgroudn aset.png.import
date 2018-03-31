@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/game_background_2.png-8c9fa1fb046a18beb5a8d5bdcc20f5b2.stex"
+path="res://.import/backgroudn aset.png-bbefd60133a2b8f8731c103b46f06133.stex"
 
 [deps]
 
-source_file="res://game_background_2.png"
-source_md5="bf7ad7bae367686970b82fe500e80632"
+source_file="res://Sprites/Tła/backgroudn aset.png"
+source_md5="754c6a4949d2a68f2c7e5024b16904ea"
 
-dest_files=[ "res://.import/game_background_2.png-8c9fa1fb046a18beb5a8d5bdcc20f5b2.stex" ]
-dest_md5="f5ecec0428eed643b9276dba725c9f7a"
+dest_files=[ "res://.import/backgroudn aset.png-bbefd60133a2b8f8731c103b46f06133.stex" ]
+dest_md5="08ff08adf1d26e829fda4a80a865ad3e"
 
 [params]
 
