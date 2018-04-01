@@ -10,6 +10,7 @@
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
 position = Vector2( 101.813, 188.965 )
+_sections_unfolded = [ "Transform", "collision" ]
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
 
