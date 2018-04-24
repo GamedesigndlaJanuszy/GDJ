@@ -40,7 +40,8 @@ func _physics_process(delta):
 		if friction == true:
 			motion.x = lerp(motion.x, 0, 0.5)
 		
-	motion = move_and_slide(motion, UP)
+#	motion = move_and_slide(motion, UP)
+	move_and_slide(motion, UP)
 	pass
 
 
